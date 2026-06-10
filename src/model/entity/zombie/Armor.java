@@ -10,25 +10,16 @@ public class Armor {
     private int health;
     private int maxHealth;
 
-    /**
-     * Get the type of this armor piece
-     */
     public String getType() {
         // TODO: Implementation
         return type;
     }
 
-    /**
-     * Get the current health of this armor piece
-     */
     public int getHealth() {
         // TODO: Implementation
         return health;
     }
 
-    /**
-     * Get the maximum health of this armor piece
-     */
     public int getMaxHealth() {
         // TODO: Implementation
         return maxHealth;

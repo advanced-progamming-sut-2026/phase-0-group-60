@@ -16,41 +16,26 @@ public class Chapter {
     private List<Level> levels;
     private boolean isUnlocked;
 
-    /**
-     * Get the name of this chapter
-     */
     public String getName() {
         // TODO: Implementation
         return name;
     }
 
-    /**
-     * Get the chapter number
-     */
     public int getChapterNumber() {
         // TODO: Implementation
         return chapterNumber;
     }
 
-    /**
-     * Get the type/theme of this chapter
-     */
     public ChapterType getType() {
         // TODO: Implementation
         return type;
     }
 
-    /**
-     * Get all levels in this chapter
-     */
     public List<Level> getLevels() {
         // TODO: Implementation
         return levels;
     }
 
-    /**
-     * Get a specific level by number
-     */
     public Level getLevel(int levelNumber) {
         // TODO: Implementation
         return null;

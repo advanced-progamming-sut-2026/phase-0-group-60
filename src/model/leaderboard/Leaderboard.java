@@ -10,16 +10,10 @@ import java.util.List;
 public class Leaderboard {
     private List<LeaderboardEntry> entries;
 
-    /**
-     * Initialize the leaderboard
-     */
     public Leaderboard() {
         // TODO: Implementation - Load all user entries
     }
 
-    /**
-     * Get all leaderboard entries
-     */
     public List<LeaderboardEntry> getEntries() {
         // TODO: Implementation
         return entries;

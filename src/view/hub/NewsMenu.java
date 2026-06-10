@@ -1,10 +1,10 @@
 package view.hub;
 
-import view.GameMenu;
+import view.AppMenu;
 
 import java.util.Scanner;
 
-public class NewsMenu implements GameMenu {
+public class NewsMenu implements AppMenu {
     @Override
     public void handle(Scanner scanner) {
 

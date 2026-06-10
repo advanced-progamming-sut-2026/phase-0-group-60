@@ -16,40 +16,25 @@ public class Shop {
     private LocalDate dailyDealDate;
     private Map<String, Boolean> dailyPurchaseStatus;
 
-    /**
-     * Initialize the shop with all available items
-     */
     public Shop() {
         // TODO: Implementation - Load permanent items and daily deal
     }
 
-    /**
-     * Get all permanent shop items
-     */
     public List<ShopItem> getPermanentItems() {
         // TODO: Implementation
         return permanentItems;
     }
 
-    /**
-     * Get today's daily deal
-     */
     public ShopItem getDailyDeal() {
         // TODO: Implementation
         return dailyDeal;
     }
 
-    /**
-     * Check if daily deal has been purchased today
-     */
     public boolean isDailyDealPurchased() {
         // TODO: Implementation
         return false;
     }
 
-    /**
-     * Purchase an item from the shop
-     */
     public boolean purchaseItem(String itemId, int count, String plantType, User user) {
         // TODO: Implementation - Check currency, limits, validity
         return false;

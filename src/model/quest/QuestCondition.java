@@ -10,17 +10,11 @@ public class QuestCondition {
     private int targetValue;
     private String targetId;
 
-    /**
-     * Get the type of condition
-     */
     public QuestConditionType getType() {
         // TODO: Implementation
         return type;
     }
 
-    /**
-     * Get the target value to reach
-     */
     public int getTargetValue() {
         // TODO: Implementation
         return targetValue;

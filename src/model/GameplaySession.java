@@ -13,7 +13,7 @@ public class GameplaySession {
     private Chapter chapter;
     private Level level;
     private Tile[][] board;
-    private int currentWave;
+    private Wave currentWave;
     private int totalWaves;
     private int tickCount;
     private int sunAmount;
@@ -25,49 +25,59 @@ public class GameplaySession {
     private int playerScore;
     private boolean[] lawnMowersUsed;
 
-    /**
-     * Get the current chapter
-     */
     public Chapter getChapter() {
         // TODO: Implementation
         return chapter;
     }
 
-    /**
-     * Get the current level
-     */
     public Level getLevel() {
         // TODO: Implementation
         return level;
     }
 
-    /**
-     * Get the game board
-     */
     public Tile[][] getBoard() {
         // TODO: Implementation
         return board;
     }
 
-    /**
-     * Get the current wave number
-     */
-    public int getCurrentWave() {
+    public Wave getCurrentWave() {
         // TODO: Implementation
         return currentWave;
     }
 
     /**
-     * Get the total number of waves
+     * Progress to next wave
      */
+    public void nextWave() {
+        // TODO: Implementation
+    }
+
+    /**
+     * Check if all waves are complete
+     */
+    public boolean isComplete() {
+        // TODO: Implementation
+        return currentWave.getWaveNumber() > totalWaves;
+    }
+
     public int getTotalWaves() {
         // TODO: Implementation
         return totalWaves;
     }
 
+    public boolean isFinalWave() {
+        // TODO: Implementation
+        return currentWave.getWaveNumber() == totalWaves;
+    }
+
     /**
-     * Get the current tick count from level start
+     * Check if wave should progress to next
      */
+    public boolean shouldProgressToNextWave(int totalZombieHealthDefeated) {
+        // TODO: Implementation - 75% health destroyed
+        return false;
+    }
+
     public int getTickCount() {
         // TODO: Implementation
         return tickCount;
@@ -80,32 +90,20 @@ public class GameplaySession {
         // TODO: Implementation - Update all entities, spawn zombies, etc.
     }
 
-    /**
-     * Get the current sun amount
-     */
     public int getSunAmount() {
         // TODO: Implementation
         return sunAmount;
     }
 
-    /**
-     * Add sun to the current amount
-     */
     public void addSun(int amount) {
         // TODO: Implementation
     }
 
-    /**
-     * Remove sun from the current amount
-     */
     public boolean removeSun(int amount) {
         // TODO: Implementation
         return false;
     }
 
-    /**
-     * Get the current plant food count
-     */
     public int getPlantFoodCount() {
         // TODO: Implementation
         return plantFoodCount;
@@ -126,17 +124,11 @@ public class GameplaySession {
         return false;
     }
 
-    /**
-     * Get all selected plants for this level
-     */
     public List<Plant> getSelectedPlants() {
         // TODO: Implementation
         return selectedPlants;
     }
 
-    /**
-     * Get all active zombies on the board
-     */
     public List<Zombie> getActiveZombies() {
         // TODO: Implementation
         return activeZombies;

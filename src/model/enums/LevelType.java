@@ -23,17 +23,11 @@ public enum LevelType {
         this.displayName = displayName;
     }
 
-    /**
-     * Get the display name of this level type
-     */
     public String getDisplayName() {
         // TODO: Implementation
         return displayName;
     }
 
-    /**
-     * Check if this is a special level
-     */
     public boolean isSpecial() {
         // TODO: Implementation
         return this != REGULAR;

@@ -14,33 +14,21 @@ public abstract class Plant extends BoardEntity {
     protected int timeSinceLastPlacement;
     protected int level;
 
-    /**
-     * Get the name/type of this plant
-     */
     public String getName() {
         // TODO: Implementation
         return name;
     }
 
-    /**
-     * Get the sun cost to place this plant
-     */
     public int getSunCost() {
         // TODO: Implementation
         return sunCost;
     }
 
-    /**
-     * Get the recharge time in ticks before this plant can be placed again
-     */
     public int getRechargeTime() {
         // TODO: Implementation
         return rechargeTime;
     }
 
-    /**
-     * Get the time remaining until this plant can be placed again
-     */
     public int getTimeUntilReady() {
         // TODO: Implementation - Returns max(0, rechargeTime - timeSinceLastPlacement)
         return 0;
@@ -54,9 +42,6 @@ public abstract class Plant extends BoardEntity {
         return false;
     }
 
-    /**
-     * Get the current level/upgrade level of this plant
-     */
     public int getLevel() {
         // TODO: Implementation
         return level;

@@ -2,6 +2,6 @@ package view;
 
 import java.util.Scanner;
 
-public interface GameMenu {
+public interface AppMenu {
     public void handle(Scanner scanner);
 }

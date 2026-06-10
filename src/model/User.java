@@ -1,6 +1,10 @@
 package model;
 
+import model.entity.plant.Plant;
+
 import java.util.Date;
+import java.util.List;
+import java.util.Map;
 
 /**
  * Represents a user account in the game.
@@ -14,6 +18,7 @@ public class User {
     private String email;
     private String gender;
     private Date createdAt;
+    private Map<News, Boolean> newsList; // (news, seenStatus)
     private int coins;
     private int gems;
     private int difficultyLevel;
@@ -21,37 +26,27 @@ public class User {
     private String securityQuestion;
     private String securityAnswer;
 
+    private List<Plant> unlockedPlants;
+
     // TODO: Add collection of unlocked plants
     // TODO: Add collection of seen zombies
     // TODO: Add progress tracking data
     // TODO: Add quest completion tracking
 
-    /**
-     * Get the unique username of this user
-     */
     public String getUsername() {
         // TODO: Implementation
         return username;
     }
 
-    /**
-     * Get the display nickname of this user
-     */
     public String getNickname() {
         // TODO: Implementation
         return nickname;
     }
 
-    /**
-     * Update the user's nickname
-     */
     public void setNickname(String nickname) {
         // TODO: Implementation - Validate length (3-30 chars)
     }
 
-    /**
-     * Set the hashed password
-     */
     public void setPasswordHash(String passwordHash) {
         // TODO: Implementation
     }
@@ -64,70 +59,52 @@ public class User {
         return false;
     }
 
-    /**
-     * Get the user's email address
-     */
     public String getEmail() {
         // TODO: Implementation
         return email;
     }
 
-    /**
-     * Set the user's email address
-     */
     public void setEmail(String email) {
         // TODO: Implementation - Validate email format
     }
 
-    /**
-     * Get the user's gender
-     */
     public String getGender() {
         // TODO: Implementation
         return gender;
     }
 
-    /**
-     * Get the user's current coin balance
-     */
+    public Map<News, Boolean> getNewsList() {
+        return newsList;
+    }
+
+    public boolean hasSeenNews(News news) {
+        // TODO: Implementation
+        return true;
+    }
+
     public int getCoins() {
         // TODO: Implementation
         return coins;
     }
 
-    /**
-     * Add coins to the user's account
-     */
     public void addCoins(int amount) {
         // TODO: Implementation
     }
 
-    /**
-     * Remove coins from the user's account
-     */
     public boolean removeCoins(int amount) {
         // TODO: Implementation
         return false;
     }
 
-    /**
-     * Get the user's current gem balance
-     */
     public int getGems() {
         // TODO: Implementation
         return gems;
     }
 
-    /**
-     * Add gems to the user's account
-     */
     public void addGems(int amount) {
         // TODO: Implementation
     }
 
-    /**
-     * Remove gems from the user's account
-     */
     public boolean removeGems(int amount) {
         // TODO: Implementation
         return false;
@@ -148,40 +125,25 @@ public class User {
         // TODO: Implementation - Validate range 1-5
     }
 
-    /**
-     * Get the timestamp when this account was created
-     */
     public Date getCreatedAt() {
         // TODO: Implementation
         return createdAt;
     }
 
-    /**
-     * Check if user should stay logged in
-     */
     public boolean isStayLoggedIn() {
         // TODO: Implementation
         return stayLoggedIn;
     }
 
-    /**
-     * Set stay logged in preference
-     */
     public void setStayLoggedIn(boolean stay) {
         // TODO: Implementation
     }
 
-    /**
-     * Get the security question for password recovery
-     */
     public String getSecurityQuestion() {
         // TODO: Implementation
         return securityQuestion;
     }
 
-    /**
-     * Verify the security answer
-     */
     public boolean verifySecurityAnswer(String answer) {
         // TODO: Implementation
         return false;
@@ -192,5 +154,14 @@ public class User {
      */
     public void resetPassword(String newPassword) {
         // TODO: Implementation - SHA-256 hash
+    }
+
+    public List<Plant> getUnlockedPlants() {
+        // TODO: Implementation
+        return unlockedPlants;
+    }
+
+    public void unlockPlant() {
+        // TODO: Implementation
     }
 }

@@ -15,24 +15,15 @@ public class Greenhouse {
     private GreenhousePot[][] pots;
     private Map<Integer, Integer> unlockedPots; // potId -> true if unlocked
 
-    /**
-     * Initialize the greenhouse with locked/unlocked pots
-     */
     public Greenhouse() {
         // TODO: Implementation - Initialize 20 pots, first 5 unlocked
     }
 
-    /**
-     * Get the status of a specific pot
-     */
     public GreenhousePot getPot(int x, int y) {
         // TODO: Implementation
         return null;
     }
 
-    /**
-     * Check if a pot is unlocked
-     */
     public boolean isPotUnlocked(int x, int y) {
         // TODO: Implementation
         return false;

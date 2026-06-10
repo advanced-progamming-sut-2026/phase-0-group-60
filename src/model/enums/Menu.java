@@ -1,6 +1,6 @@
 package model.enums;
 
-import view.GameMenu;
+import view.AppMenu;
 import view.auth.*;
 import view.gameplay.*;
 import view.hub.*;
@@ -18,9 +18,9 @@ public enum Menu {
     Profile(new ProfileMenu()),
     Settings(new SettingsMenu());
 
-    private final GameMenu menu;
+    private final AppMenu menu;
 
-    Menu(GameMenu menu) {
+    Menu(AppMenu menu) {
         this.menu = menu;
     }
 

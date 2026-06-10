@@ -14,65 +14,41 @@ public class App {
     private static Menu currentMenu = Menu.Signup;
     private static GameplaySession currentSession = null;
 
-    /**
-     * Get the currently logged-in user, or null if none
-     */
     public static User getLoggedInUser() {
         // TODO: Implementation
         return loggedInUser;
     }
 
-    /**
-     * Set the currently logged-in user
-     */
     public static void setLoggedInUser(User user) {
         // TODO: Implementation
         loggedInUser = user;
     }
 
-    /**
-     * Check if a user is currently logged in
-     */
     public static boolean isUserLoggedIn() {
         // TODO: Implementation
         return loggedInUser != null;
     }
 
-    /**
-     * Logout the current user
-     */
     public static void logout() {
         // TODO: Implementation
         loggedInUser = null;
     }
 
-    /**
-     * Get the current active menu
-     */
     public static Menu getCurrentMenu() {
         // TODO: Implementation
         return currentMenu;
     }
 
-    /**
-     * Set the current menu to display
-     */
     public static void setCurrentMenu(Menu menu) {
         // TODO: Implementation - Validate menu transitions
         currentMenu = menu;
     }
 
-    /**
-     * Get the current active game session
-     */
     public static GameplaySession getCurrentSession() {
         // TODO: Implementation
         return currentSession;
     }
 
-    /**
-     * Create and set a new game session
-     */
     public static void createNewSession(Chapter chapter, Level level, List<Plant> selectedPlants) {
         // TODO: Implementation - Initialize board, waves, etc.
     }

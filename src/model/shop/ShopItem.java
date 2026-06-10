@@ -15,65 +15,41 @@ public class ShopItem {
     private int maxCapacity;
     private String associatedPlant;
 
-    /**
-     * Get the unique item ID
-     */
     public String getItemId() {
         // TODO: Implementation
         return itemId;
     }
 
-    /**
-     * Get the display name of this item
-     */
     public String getName() {
         // TODO: Implementation
         return name;
     }
 
-    /**
-     * Get the type of this item
-     */
     public ShopItemType getType() {
         // TODO: Implementation
         return type;
     }
 
-    /**
-     * Get the coin cost of this item
-     */
     public int getCostCoins() {
         // TODO: Implementation
         return costCoins;
     }
 
-    /**
-     * Get the gem cost of this item
-     */
     public int getCostGems() {
         // TODO: Implementation
         return costGems;
     }
 
-    /**
-     * Get the quantity obtained per purchase
-     */
     public int getQuantity() {
         // TODO: Implementation
         return quantity;
     }
 
-    /**
-     * Get the maximum number of this item that can be owned
-     */
     public int getMaxCapacity() {
         // TODO: Implementation
         return maxCapacity;
     }
 
-    /**
-     * Get the associated plant type (for seed packets)
-     */
     public String getAssociatedPlant() {
         // TODO: Implementation
         return associatedPlant;

@@ -20,33 +20,21 @@ public class Tile {
         this.type = type;
     }
 
-    /**
-     * Get the X coordinate of this tile
-     */
     public int getX() {
         // TODO: Implementation
         return x;
     }
 
-    /**
-     * Get the Y coordinate of this tile
-     */
     public int getY() {
         // TODO: Implementation
         return y;
     }
 
-    /**
-     * Get the terrain type of this tile
-     */
     public TileType getType() {
         // TODO: Implementation
         return type;
     }
 
-    /**
-     * Set the terrain type of this tile
-     */
     public void setType(TileType type) {
         // TODO: Implementation
     }

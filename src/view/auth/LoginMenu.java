@@ -1,12 +1,12 @@
 package view.auth;
 
 import controller.auth.LoginMenuController;
-import view.GameMenu;
+import view.AppMenu;
 
 import java.util.Scanner;
 import java.util.regex.Matcher;
 
-public class LoginMenu implements GameMenu {
+public class LoginMenu implements AppMenu {
     private final LoginMenuController controller = new LoginMenuController();
 
     @Override

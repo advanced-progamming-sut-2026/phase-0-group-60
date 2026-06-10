@@ -1,10 +1,10 @@
 package view.gameplay;
 
-import view.GameMenu;
+import view.AppMenu;
 
 import java.util.Scanner;
 
-public class NetworkMenu implements GameMenu {
+public class NetworkMenu implements AppMenu {
     @Override
     public void handle(Scanner scanner) {
 

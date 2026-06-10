@@ -10,40 +10,25 @@ public abstract class BoardEntity {
     protected int health;
     protected int maxHealth;
 
-    /**
-     * Get the X position of this entity
-     */
     public int getX() {
         // TODO: Implementation
         return x;
     }
 
-    /**
-     * Get the Y position of this entity
-     */
     public int getY() {
         // TODO: Implementation
         return y;
     }
 
-    /**
-     * Set the position of this entity
-     */
     public void setPosition(int x, int y) {
         // TODO: Implementation
     }
 
-    /**
-     * Get the current health of this entity
-     */
     public int getHealth() {
         // TODO: Implementation
         return health;
     }
 
-    /**
-     * Get the maximum health of this entity
-     */
     public int getMaxHealth() {
         // TODO: Implementation
         return maxHealth;

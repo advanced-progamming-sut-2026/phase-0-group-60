@@ -17,49 +17,31 @@ public abstract class Zombie extends BoardEntity {
     protected boolean isGlowing;
     protected List<Armor> armor;
 
-    /**
-     * Get the type/name of this zombie
-     */
     public String getType() {
         // TODO: Implementation
         return type;
     }
 
-    /**
-     * Get the movement speed of this zombie (in units per tick)
-     */
     public float getSpeed() {
         // TODO: Implementation
         return speed;
     }
 
-    /**
-     * Get the damage this zombie deals to plants
-     */
     public int getDamage() {
         // TODO: Implementation
         return damage;
     }
 
-    /**
-     * Get the wave cost (value required to spawn this zombie)
-     */
     public int getCostToSpawn() {
         // TODO: Implementation
         return costToSpawn;
     }
 
-    /**
-     * Check if this zombie is glowing (5% chance, gives plant food when killed)
-     */
     public boolean isGlowing() {
         // TODO: Implementation
         return isGlowing;
     }
 
-    /**
-     * Get list of armor pieces this zombie is wearing
-     */
     public List<Armor> getArmor() {
         // TODO: Implementation
         return armor;

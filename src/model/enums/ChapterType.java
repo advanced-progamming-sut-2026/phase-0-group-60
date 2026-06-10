@@ -15,9 +15,6 @@ public enum ChapterType {
         this.displayName = displayName;
     }
 
-    /**
-     * Get the display name of this chapter type
-     */
     public String getDisplayName() {
         // TODO: Implementation
         return displayName;
